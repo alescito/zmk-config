@@ -2,4 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: alescito/zmk_mine/.github/workflows/build-user-config.yml@bongo-cat
+    uses: alescito/zmk_mine/.github/workflows/build-user-config.yml@main
