@@ -106,10 +106,10 @@
 // | BT2 |     |     |      |     |   |  \  | ENT  |      |     |      |
 //             |     |      |     |   |     |      |      |
                         bindings = <
-   &kp GRAVE    &bl_work     &bl_PC   &kp ESC &trans    &kp TAB  &kp BSPC &kp DEL   &kp HOME   &kp END
+   &kp GRAVE    &trans      &trans   &kp ESC &trans    &kp TAB  &kp BSPC &kp DEL   &kp HOME   &kp END
    &kp LSHFT    &kp LCTRL   &kp LALT &kp LGUI  &kp K_APP  &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSPC
    &bt BT_SEL 1 &trans      &trans   &kp TAB   &trans     &kp BSLH &kp RET  &trans   &trans    &trans
-                            &ext_power EP_ON   &mo 4    &trans     &ext_power EP_ON   &trans   &ext_power EP_OFF
+                            &trans   &mo 4    &trans      &trans   &trans   &trans
                         >;
                 };
 
@@ -138,7 +138,7 @@
                         bindings = <
    &kp N1           &kp N2           &kp N3       &kp N4  &kp N5    &kp N6    &kp N7   &kp N8   &kp N9    &kp N0
    &bl_work_monitor &bl_pc_monitor   &bl_work     &bl_PC  &bl_PI    &kp K_APP &kp LGUI &kp LALT &kp LCTRL &kp LSHFT
-   &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2   &trans    &trans    &trans   &kp N2   &kp DOT   &kp FSLH
+   &trans           &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2   &trans    &trans    &trans   &kp N2   &kp DOT   &kp FSLH
                  &trans &trans &trans    &kp N0    &kp DOT &trans
                         >;
                 };
@@ -151,7 +151,7 @@
                         bindings = <
    &kp F1  &kp F2  &kp F3 &kp F4 &kp F5 &kp F6    &kp F7   &kp F8   &kp F9    &kp F10
    &kp F11 &kp F12 &trans &trans &trans &kp K_APP &kp LGUI &kp LALT &kp LCTRL &kp LSHFT 
-   &trans  &trans  &trans &trans &bootloader &reset   &trans   &trans   &trans    &trans 
+   &bt BT_CLR  &trans  &trans &trans &bootloader &reset   &trans   &trans   &trans    &trans 
                  &trans &trans &trans &trans    &trans   &trans
                         >;
                 };
