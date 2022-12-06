@@ -86,26 +86,10 @@
     };
 };
 
-    &sk {
-        release-after-ms = <2000>;
-        quick-release;
-    };
-
-/ {
-    behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods";
-            #binding-cells = <2>;
-            tapping_term_ms = <140>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&sk>;
-        };
-    };
-};
 &lt { quick_tap_ms = <200>; };
 
 / {
+
     combos {
         compatible = "zmk,combos";
 
@@ -122,8 +106,6 @@
         };
 
     };
-};
-/ {
 
     behaviors {
         hm: homerow_mods {
@@ -135,11 +117,6 @@
             bindings = <&kp>, <&kp>;
         };
     };
-    };
-
-    
-
-/ {
         keymap {
                 compatible = "zmk,keymap";
 
