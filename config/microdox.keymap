@@ -15,6 +15,10 @@
 #define NUMBERS   3
 #define FUNCTION_KEYS  4
 
+
+
+&lt { quick_tap_ms = <200>; };
+
 / {
     macros {
         bl_work_monitor: bl_work_monitor {
@@ -28,8 +32,6 @@
                 ;
         };
     };
-};
-/ {
     macros {
         bl_pc_monitor: bl_pc_monitor {
             label = "ZM_bl_pc_monitor";
@@ -42,8 +44,6 @@
                 ;
         };
     };
-};
-/ {
     macros {
         bl_work: bl_work {
             label = "ZM_bl_work";
@@ -56,8 +56,6 @@
                 ;
         };
     };
-};
-/ {
     macros {
         bl_PC: bl_PC {
             label = "ZM_bl_PC";
@@ -70,9 +68,6 @@
                 ;
         };
     };
-};
-
-/ {
     macros {
         bl_PI: bl_PI {
             label = "ZM_bl_PI";
@@ -84,11 +79,6 @@
                 ;
         };
     };
-};
-
-&lt { quick_tap_ms = <200>; };
-
-/ {
 
     combos {
         compatible = "zmk,combos";
