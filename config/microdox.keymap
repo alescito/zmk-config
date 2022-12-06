@@ -81,7 +81,7 @@
 };
 
 behaviors {
-        hm: TEST {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "TEST";
             #binding-cells = <2>;
