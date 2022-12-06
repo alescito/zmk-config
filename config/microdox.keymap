@@ -87,7 +87,7 @@ behaviors {
             #binding-cells = <2>;
             tapping_term_ms = <200>;
             flavor = "tap-preferred";
-            bindings = <&mt>, <&sk>;
+            bindings = <&kp>, <&sk>;
         };
 };
 #define BASE 0
