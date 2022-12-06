@@ -8,7 +8,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
-#include <dt-bindings/zmk/outputs.h>
+
+#define BASE 0
+#define NAVIGATION   1
+#define SYMBOLS   2
+#define NUMBERS   3
+#define FUNCTION_KEYS  4
 
 / {
     macros {
@@ -82,13 +87,9 @@
 };
 
     
-#define BASE 0
-#define NAVIGATION   1
-#define SYMBOLS   2
-#define NUMBERS   3
-#define FUNCTION_KEYS  4
 
-behaviors {
+/ {
+    behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
@@ -98,6 +99,8 @@ behaviors {
             bindings = <&kp>, <&kp>;
         };
     };
+};
+    
 
 / {
         keymap {
