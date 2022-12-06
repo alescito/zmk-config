@@ -7,6 +7,78 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+/ {
+    macros {
+        bl_work_monitor: bl_work_monitor {
+            label = "ZM_bl_work_monitor";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&bt BT_SEL 2>
+                , <&kp F4>
+                , <&bt BT_SEL 0>
+                ;
+        };
+    };
+};
+/ {
+    macros {
+        bl_pc_monitor: bl_pc_monitor {
+            label = "ZM_bl_pc_monitor";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&bt BT_SEL 2>
+                , <&kp F3>
+                , <&bt BT_SEL 1>
+                ;
+        };
+    };
+};
+/ {
+    macros {
+        bl_work: bl_work {
+            label = "ZM_bl_work";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&bt BT_SEL 2>
+                , <&kp F2>
+                , <&bt BT_SEL 0>
+                ;
+        };
+    };
+};
+/ {
+    macros {
+        bl_PC: bl_PC {
+            label = "ZM_bl_PC";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&bt BT_SEL 2>
+                , <&kp F1>
+                , <&bt BT_SEL 1>
+                ;
+        };
+    };
+};
+
+/ {
+    macros {
+        bl_PI: bl_PI {
+            label = "ZM_bl_PI";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&bt BT_SEL 2>
+                , <&kp F5 >
+                ;
+        };
+    };
+};
 
 / {
         keymap {
