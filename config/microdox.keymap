@@ -1,93 +1,19 @@
 /*
  * Copyright (c) 2020 The ZMK Contributors
- ***
+ *
  * SPDX-License-Identifier: MIT
  */
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
-
-/ {
-    macros {
-        bl_work_monitor: bl_work_monitor {
-            label = "ZM_bl_work_monitor";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bt BT_SEL 2>
-                , <&kp F4>
-                , <&bt BT_SEL 0>
-                ;
-        };
-    };
-};
-/ {
-    macros {
-        bl_pc_monitor: bl_pc_monitor {
-            label = "ZM_bl_pc_monitor";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bt BT_SEL 2>
-                , <&kp F3>
-                , <&bt BT_SEL 1>
-                ;
-        };
-    };
-};
-/ {
-    macros {
-        bl_work: bl_work {
-            label = "ZM_bl_work";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bt BT_SEL 2>
-                , <&kp F2>
-                , <&bt BT_SEL 0>
-                ;
-        };
-    };
-};
-/ {
-    macros {
-        bl_PC: bl_PC {
-            label = "ZM_bl_PC";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bt BT_SEL 2>
-                , <&kp F1>
-                , <&bt BT_SEL 1>
-                ;
-        };
-    };
-};
-
-/ {
-    macros {
-        bl_PI: bl_PI {
-            label = "ZM_bl_PI";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bt BT_SEL 2>
-                , <&kp F5 >
-                ;
-        };
-    };
-};
-
-
 
 / {
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
-//---------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |
 // |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |
 // |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
@@ -95,21 +21,21 @@
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
-   &mt RSHIFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt LSHIFT FSLH
-          &kp LGUI &lt 3 RET &mo 2 &mo 2 &lt 1 SPACE &kp RCTRL
+   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
+          &kp LGUI &mo 1 &kp LSHFT &kp SPACE &mo 2 &kp RALT
                         >;
                 };
                 nav_layer {
 // -----------------------------------------------------------------------------------------
-// |BTCLR|     | ESC |  ~   |     |   | TAB | BSPC |  DEL | HOME | END  |
-// | BT1 | GUI | ALT | CTRL | NUM |   |LEFT | DOWN |  UP  | RIGHT| 
+// |BTCLR|     | ESC |  ~   |     |   | TAB | HOME |  UP  | END | DEL  |
+// | BT1 | GUI | ALT | CTRL | NUM |   |  /  | LEFT | DOWN | RGT | BKSP |
 // | BT2 |     |     |      |     |   |  \  | ENT  |      |     |      |
 //             |     |      |     |   |     |      |      |
                         bindings = <
-   &kp GRAVE    &trans      &trans   &kp ESC &trans    &kp TAB  &kp BSPC &kp DEL   &kp HOME   &kp END
-   &kp LSHFT    &kp LCTRL   &kp LALT &kp LGUI  &kp K_APP  &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSPC
-   &bt BT_SEL 1 &trans      &trans   &kp TAB   &trans     &kp BSLH &kp RET  &trans   &trans    &trans
-                            &trans   &mo 4    &trans      &trans   &trans   &trans
+   &bt BT_CLR   &trans      &kp ESC  &kp TILDE &trans     &kp TAB  &kp HOME &kp UP   &kp END   &kp DEL
+   &bt BT_SEL 0 &kp K_CMENU &kp RALT &kp LCTRL &mo 3      &kp FSLH &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
+   &bt BT_SEL 1 &trans      &trans   &trans    &trans     &kp BSLH &kp RET  &trans   &trans    &trans
+                            &trans   &trans    &trans     &trans   &trans   &trans
                         >;
                 };
 
@@ -120,10 +46,10 @@
 // |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |
 //             | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp ASTERISK &kp LPAR &kp RPAR
-   &kp BSLH  &kp PIPE  &kp UNDER &kp MINUS &kp PLUS    &kp UNDER &kp MINUS &kp EQUAL       &kp DQT  &kp SQT
-   &kp BSLH  &kp PIPE  &trans    &trans    &trans      &kp ESC   &kp LBRC  &kp RBRC        &kp LBKT &kp RBKT
-                       &kp LGUI  &kp ENTER &trans   &kp RET   &kp SPACE    &kp RALT
+   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
+   &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE
+   &trans    &trans    &trans    &trans    &trans      &trans    &trans    &trans          &trans   &kp BSLH
+                       &kp LGUI  &trans    &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
 
@@ -136,26 +62,11 @@
 // |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |   |  0  |  .  |     |
                         bindings = <
-   &kp N1           &kp N2           &kp N3       &kp N4        &kp N5    &kp N6    &kp N7   &kp N8    &kp N9    &kp N0
-   &kp LSHFT        &kp LCTRL        &kp LALT     &kp LGUI      &kp K_APP &kp K_APP &kp RGUI &kp RALT  &kp RCTRL &kp RSHFT
-   &trans           &bt BT_SEL 0     &bt BT_SEL 1 &bt BT_SEL 2  &trans    &trans    &trans   &kp COMMA &kp DOT   &kp FSLH
-                    &trans           &trans       &trans        &kp N0    &kp DOT   &trans
-                        >;
-                };
-                        Test_layer {
-// -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
-// |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
-// |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
-//             |     |     |     |   |  0  |  .  |     |
-                        bindings = <
-   &kp F1           &kp F2          &kp F3      &kp F4  &kp F5 &kp F6    &kp F7   &kTTT
-   ltTTp F8      &kp F9    &kp F10
-   &kp F11          &kp F12         &trans      &trans  &trans &kp K_APP &kp LGUI &kp LALT    &kp LCTRL &kp LSHFT 
-   &bl_work_monitor &bl_pc_monitor  &bl_work    &bl_PC  &bl_PI &trans    &trans   &bootloader &reset    &bt BT_CLR 
-                                    &trans      &trans  &trans &trans    &trans  &trans
+   &trans &trans &trans &trans &trans    &kp A  &kp N7  &kp N8 &kp N9 &kp D
+   &trans &trans &trans &trans &trans    &kp B  &kp N4  &kp N5 &kp N6 &kp E
+   &trans &trans &trans &trans &trans    &kp C  &kp N1  &kp N2 &kp N3 &kp F
+                 &trans &trans &trans    &kp N0 &kp DOT &trans
                         >;
                 };
         };
 };
-
