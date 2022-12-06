@@ -79,6 +79,11 @@
         };
     };
 };
+#define BASE 0
+#define NAVIGATION   1
+#define SYMBOLS   2
+#define NUMBERS   3
+#define FUNCTION_KEYS  4
 
 / {
         keymap {
@@ -94,7 +99,7 @@
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
    &mt LSHIFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RSHIFT FSLH
-          &mt LCTRL LSHIFT   &lt 3 RET &mo 2 &mo 2 &lt 1 SPACE &mt RCTRL RSHIFT
+          &mt LCTRL LSHIFT   &lt NUMBERS RET &mo SYMBOLS &mo SYMBOLS &lt NAVIGATION SPACE &mt RCTRL RSHIFT
                         >;
                 };
                 nav_layer {
@@ -108,7 +113,7 @@
    &kp GRAVE    &trans      &trans   &kp ESC &trans    &kp TAB  &kp BSPC &kp DEL   &kp HOME   &kp END
    &kp LSHFT    &kp LCTRL   &kp LALT &kp LGUI  &kp K_APP  &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSPC
    &bt BT_SEL 1 &trans      &trans   &kp TAB   &trans     &kp BSLH &kp RET  &trans   &trans    &trans
-                            &trans   &mo 4    &trans      &trans   &trans   &trans
+                            &trans   &mo FUNCTION_KEYS    &trans      &trans   &trans   &trans
                         >;
                 };
 
@@ -141,7 +146,7 @@
                     &trans           &trans       &trans        &kp N0    &kp DOT   &trans
                          >;
                 };
-                        Test_layer {
+                        FKeys_Layer {
 // -----------------------------------------------------------------------------------------
 // |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
 // |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
