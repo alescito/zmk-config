@@ -149,8 +149,7 @@
 // |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |   |  0  |  .  |     |
                         bindings = <
-   &kp F1           &kp F2          &kp F3      &kp F4  &kp F5 &kp F6    &kp F7   &kTTT
-   ltTTp F8      &kp F9    &kp F10
+   &kp F1           &kp F2          &kp F3      &kp F4  &kp F5 &kp F6    &kp F7   &kp F8      &kp F9    &kp F10
    &kp F11          &kp F12         &trans      &trans  &trans &kp K_APP &kp LGUI &kp LALT    &kp LCTRL &kp LSHFT 
    &bl_work_monitor &bl_pc_monitor  &bl_work    &bl_PC  &bl_PI &trans    &trans   &bootloader &reset    &bt BT_CLR 
                                     &trans      &trans  &trans &trans    &trans  &trans
