@@ -86,6 +86,8 @@
 #define NUM 3
 #define FUN 4
 
+&lt { quick_tap_ms = <200>; };
+
 / {
 
     behaviors {
