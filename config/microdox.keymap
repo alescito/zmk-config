@@ -88,11 +88,6 @@
 
 &lt { quick_tap_ms = <225>; };
 
-
-/ {
-
- 
-
 / {
     behaviors {
         lh_pht: left_hand_positional_hold_tap {
