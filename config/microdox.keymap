@@ -81,13 +81,13 @@
 };
 /{
 behaviors {
-        hm: homerow_mods {
+        sc: shif_control {
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
             #binding-cells = <2>;
             tapping_term_ms = <200>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings = <&sk>, <&kp>;
         };
     };
 };
@@ -147,7 +147,7 @@ behaviors {
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMI
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-         &sk LSHIFT &lt NUM RET &mo SYM &mo SYM &lt NAV SPACE &sk RSHIFT 
+         &sk LSHIFT &lt NUM RET &mo SYM &mo SYM &lt NAV SPACE &sc RSHIFT 
                         >;
                 };
                 nav_layer {
