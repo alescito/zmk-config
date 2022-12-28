@@ -87,8 +87,8 @@
 #define FUN 4
 
 &lt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <300>;
+    flavor = "balanced";
+    tapping-term-ms = <185>;
     retro-tap;
 };
 /{
