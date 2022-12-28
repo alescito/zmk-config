@@ -88,7 +88,7 @@
 
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <185>;
+    tapping-term-ms = <225>;
     retro-tap;
 };
 /{
