@@ -92,12 +92,6 @@
     retro-tap;
 };
 
-&mt {
-    flavor = "balanced";
-    tapping-term-ms = <165>;
-    retro-tap;
-};
-
 /{
         keymap {
                 compatible = "zmk,keymap";
