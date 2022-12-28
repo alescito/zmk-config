@@ -79,17 +79,17 @@
         };
     };
 };
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RCTRL>;
+behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "homerow mods";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
         };
     };
-};
+
 
 
 
@@ -117,7 +117,7 @@
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
-   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMI
+   &hm LSHFT A &hm LCTRL S &hm LALT D &hm LGUI F &kp G   &kp H &hm RGUI J  &hm RCTRL K &HM RALT L &hm RSHFT SEMI
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
          &kp LSHFT &lt NUM RET &mo SYM &mo SYM &lt NAV SPACE &kp RCTRL 
                         >;
