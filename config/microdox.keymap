@@ -85,7 +85,7 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
             #binding-cells = <2>;
-            tapping_term_ms = <200>;
+            tapping_term_ms = <250>;
             flavor = "tap-preferred";
             bindings = <&sk>, <&kp>;
         };
@@ -105,34 +105,6 @@ behaviors {
     retro-tap;
 };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_LCRTL {
-            timeout-ms = <50>;
-            key-positions = <11  34>;
-            bindings = <&kp RCTRL>;
-        };
-        combo_RCRTL {
-            timeout-ms = <50>;
-            key-positions = <18  31>;
-            bindings = <&kp RCTRL>;
-        };
-        combo_Test_CRTL {
-            timeout-ms = <50>;
-            key-positions = <18  34>;
-            bindings = <&kp RCTRL>;
-        };
-    };
-};
-
-&sk {
-    release-after-ms = <2000>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-};
-
-
 /{
         keymap {
                 compatible = "zmk,keymap";
@@ -147,7 +119,7 @@ behaviors {
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMI
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-         &sk LSHIFT &lt NUM RET &mo SYM &mo SYM &lt NAV SPACE &sc LCTRL RSHIFT
+         &sc LCTRL LSHIFT &lt NUM RET &mo SYM &mo SYM &lt NAV SPACE &sc LSHIFT LCTRL
                         >;
                 };
                 nav_layer {
