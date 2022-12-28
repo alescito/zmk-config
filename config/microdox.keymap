@@ -85,7 +85,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <18 34>;
+            key-positions = <17 18>;
             bindings = <&kp RCTRL>;
         };
     };
