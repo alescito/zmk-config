@@ -92,6 +92,12 @@
     retro-tap;
 };
 
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    retro-tap;
+};
+
 /{
         keymap {
                 compatible = "zmk,keymap";
