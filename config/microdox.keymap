@@ -87,7 +87,7 @@
 #define FUN 4
 
 &lt {
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
     tapping-term-ms = <5>;
     retro-tap;
 };
