@@ -80,6 +80,16 @@
     };
 };
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+        caps_word_combo {
+	    timeout-ms = <50>;
+            key-positions = <19 39>;
+            bindings = <kp RCTRL>;
+        };
+    };
+};
 
 #define NAV 1
 #define SYM 2
@@ -92,11 +102,6 @@
     retro-tap;
 };
 
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <135>;
-    retro-tap;
-};
 
 /{
         keymap {
@@ -111,7 +116,7 @@
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMI
-   &mt LSHIFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &mt RSHIFT FSLH
+   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
          &kp LSHFT &lt NUM RET &mo SYM &mo SYM &lt NAV SPACE &kp RCTRL 
                         >;
                 };
