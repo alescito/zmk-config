@@ -131,7 +131,7 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <135>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             global-quick-tap;
@@ -142,7 +142,7 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <135>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             global-quick-tap;
@@ -178,7 +178,7 @@ behaviors {
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
-   &lhm LSHIFT  A &lhm LCTRL S &lhm LALT D &lhm LGUI F  &kp G   &kp H &rhm LGUI J &rhm RALT K &rhm RCTRL L &rhm RSHIFT  SEMI  
+   &kp A &kp S &kp D &lhm LSHIFT F  &kp G   &kp H &rhm LSHIFT  &kp K &kp L &kp SEMI  
    &pht LSHIFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &rs RSHIFT FSLH
          &sc LCTRL LSHIFT &lt NUM RET &mo SYM &mo SYM &lt NAV SPACE &sc LCTRL LSHIFT
                         >;
