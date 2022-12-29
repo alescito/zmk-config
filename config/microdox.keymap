@@ -120,8 +120,8 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <350>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             global-quick-tap;
