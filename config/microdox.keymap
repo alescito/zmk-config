@@ -127,6 +127,17 @@ behaviors {
             global-quick-tap;
             hold-trigger-key-positions = <1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19>;    // <---[[the W key]]
         };
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            global-quick-tap;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;    // <---[[the W key]]
+            bindings = <&kp>, <&kp>;
+        };
     };
 };
 
