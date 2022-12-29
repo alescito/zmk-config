@@ -122,7 +122,7 @@ behaviors {
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <101>;
             bindings = <&kp>, <&kp>;
             global-quick-tap;
             hold-trigger-key-positions = <1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19>;    // <---[[the W key]]
