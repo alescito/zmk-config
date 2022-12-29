@@ -103,6 +103,8 @@ behaviors {
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <34>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
             retro-tap;    
         };
         rs: shif_control {
@@ -112,8 +114,6 @@ behaviors {
             tapping_term_ms = <10>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
             retro-tap;    
         };
     };
