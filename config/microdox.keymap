@@ -99,7 +99,7 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "Left_shift_Z";
             #binding-cells = <2>;
-            tapping_term_ms = <200>;
+            tapping_term_ms = <160>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
             retro-tap;    
