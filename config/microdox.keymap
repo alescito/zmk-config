@@ -178,7 +178,7 @@ behaviors {
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
-   &hm LSHIFT  A &hm LCTRL S &hm LALT D &hm LGUI F  &kp G   &kp H &hm LGUI J &hm RALT K &hm RCTRL L hm RSHIFT  SEMI  
+   &lhm LSHIFT  A &lhm LCTRL S &lhm LALT D &lhm LGUI F  &kp G   &kp H &rhm LGUI J &rhm RALT K &rhm RCTRL L &rhm RSHIFT  SEMI  
    &pht LSHIFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &rs RSHIFT FSLH
          &sc LCTRL LSHIFT &lt NUM RET &mo SYM &mo SYM &lt NAV SPACE &sc LCTRL LSHIFT
                         >;
