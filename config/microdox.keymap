@@ -89,11 +89,29 @@
 behaviors {
         sc: shif_control {
             compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods";
+            label = "Shif_Control";
             #binding-cells = <2>;
-            tapping_term_ms = <250>;
+            tapping_term_ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&sk>;
+        };
+        ls: shif_control {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Left_shift_Z";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;    
+        };
+        rs: shif_control {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Right _shift_Z";
+            #binding-cells = <2>;
+            tapping_term_ms = <10>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;    
         };
     };
 };
@@ -124,7 +142,7 @@ behaviors {
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K &kp L &kp SEMI
-   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
+   &ls LSHIFT Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &rs RSHIFT FSLH
          &sc LCTRL LSHIFT &lt NUM RET &mo SYM &mo SYM &lt NAV SPACE &sc LCTRL LSHIFT
                         >;
                 };
