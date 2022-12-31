@@ -148,7 +148,7 @@ behaviors {
 // | BT2 |     |     |      |     |   |  \  | ENT  |      |     |      |
 //             |     |      |     |   |     |      |      |
                         bindings = <
-   &kp GRAVE    &trans      &trans   &kp ESC &trans    &kp TAB  &kp BSPC &kp DEL   &kp HOME   &kp END
+   &kp GRAVE    &trans      &trans   &kp ESC &trans    &kp RET  &kp BSPC &kp DEL   &kp HOME   &kp END
    &kp LSHFT    &kp LCTRL   &kp LALT &kp LGUI  &kp K_APP  &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSPC
    &bt BT_SEL 1 &trans      &trans   &kp TAB   &kp CAPSLOCK     &kp BSLH &kp RET  &trans   &trans    &trans
                             &trans   &mo FUN   &trans      &trans   &trans   &trans
