@@ -101,19 +101,7 @@ behaviors {
             #binding-cells = <2>;
             tapping_term_ms = <230>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&to>;
-        };
-       
-        pht: positional_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <125>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            global-quick-tap;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;    // <---[[the W key]]
+            bindings = <&kp>, <&tog>;
         };
     };
 };
