@@ -91,7 +91,7 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "Shif_Control";
             #binding-cells = <2>;
-            tapping_term_ms = <50>;
+            tapping_term_ms = <165>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&sk>;
         };
