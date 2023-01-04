@@ -109,7 +109,7 @@ behaviors {
     flavor = "balanced";
     tapping-term-ms = <165>;
     quick-tap-ms = <125>;
-    global-quick-tap;
+    //global-quick-tap;
     retro-tap;
 };
 
