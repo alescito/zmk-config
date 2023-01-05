@@ -97,7 +97,8 @@ behaviors {
             #binding-cells = <2>;
             tapping_term_ms = <230>;
             flavor = "tap-preferred";
-            bindings = <&sk>, <&kp>;
+            retro-tap;
+            bindings = <&sl>, <&kp>;
         };
     };
 };
