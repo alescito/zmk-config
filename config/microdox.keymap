@@ -91,11 +91,15 @@ behaviors {
             flavor = "tap-preferred";
             bindings = <&mo>, <&sk>;
         };
+    };
+};
+/{
+behaviors {
         se: sym_ent {
             compatible = "zmk,behavior-hold-tap";
             label = "Shif_Control";
             #binding-cells = <2>;
-            tapping_term_ms = <230>;
+            tapping_term_ms = <430>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&sl>;
         };
