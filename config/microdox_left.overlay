@@ -5,12 +5,12 @@
  */
 
 #include "microdox.dtsi"
-
+/*
 &oled {
 	segment-remap;
 	com-invdir;
-};
-
+}; ;ljk;lkjasdfasdf
+*/
 &kscan0 {
 	col-gpios
 		= <&pro_micro 10 GPIO_ACTIVE_HIGH>
