@@ -9,7 +9,7 @@
 &oled {
 	segment-remap;
 	com-invdir;
-}; ;ljk;lkjasdfasdf
+};
 */
 &kscan0 {
 	col-gpios
