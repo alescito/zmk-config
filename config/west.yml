@@ -3,9 +3,5 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/alescito
   projects:
-    - name: zmk-mine
-      remote: alescito
-      revision: main
-      import: app/west.yml
-  self:
-    path: config
+    - name: zmk
+      remote: zmkfirmware
