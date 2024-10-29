@@ -123,7 +123,7 @@ behaviors {
 // | BT2 |     |     |      |     |   |  \  | ENT  |      |     |      |
 //             |     |      |     |   |     |      |      |
                         bindings = <
-   &kp GRAVE    U_BTN2      U_BTN1   &kp ESC U_BTN3    &trans  &kp BSPC &kp DEL   &kp HOME   &kp END
+   &kp GRAVE    &trans      &trans   &kp ESC &trans    &trans  &kp BSPC &kp DEL   &kp HOME   &kp END
    &kp LSHFT    &kp LCTRL   &kp LALT &kp LGUI  &kp K_APP  &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSPC
    &bt BT_SEL 1 &kp K_SCROLL_UP &kp K_SCROLL_DOWN &kp TAB   &kp CAPSLOCK     &kp BSLH &trans  &trans   &trans    &trans
                             &trans    &lt FUN RET   &trans      &trans   &trans   &trans
