@@ -7,6 +7,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/mouse_settings.h>
+#include "includes/mouse_keys.dtsi"
 / {
     macros {
         bl_work_monitor: bl_work_monitor {
