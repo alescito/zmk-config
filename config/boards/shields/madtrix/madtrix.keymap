@@ -79,7 +79,7 @@ behaviors {
         };
         ca: control_alt {
             compatible = "zmk,behavior-hold-tap";
-            label = "Shif_Control";
+            label = "Control_Alt";
             #binding-cells = <2>;
             tapping_term_ms = <230>;
             flavor = "tap-preferred";
