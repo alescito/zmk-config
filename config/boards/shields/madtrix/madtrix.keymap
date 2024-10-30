@@ -19,10 +19,6 @@
                 , <&bt BT_SEL 0>
                 ;
         };
-    };
-};
-/ {
-    macros {
         bl_pc_monitor: bl_pc_monitor {
             label = "ZM_bl_pc_monitor";
             compatible = "zmk,behavior-macro";
@@ -33,10 +29,6 @@
                 , <&bt BT_SEL 1>
                 ;
         };
-    };
-};
-/ {
-    macros {
         bl_work: bl_work {
             label = "ZM_bl_work";
             compatible = "zmk,behavior-macro";
@@ -47,10 +39,6 @@
                 , <&bt BT_SEL 0>
                 ;
         };
-    };
-};
-/ {
-    macros {
         bl_PC: bl_PC {
             label = "ZM_bl_PC";
             compatible = "zmk,behavior-macro";
@@ -61,10 +49,6 @@
                 , <&bt BT_SEL 1>
                 ;
         };
-    };
-};
-/ {
-    macros {
         bl_PI: bl_PI {
             label = "ZM_bl_PI";
             compatible = "zmk,behavior-macro";
@@ -74,8 +58,10 @@
                 , <&kp F5 >
                 ;
         };
+
     };
 };
+
 &sk {
     release-after-ms = <2000>;
     quick-release;
@@ -90,6 +76,14 @@ behaviors {
             tapping_term_ms = <230>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&sk>;
+        };
+        ca: control_alt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Shif_Control";
+            #binding-cells = <2>;
+            tapping_term_ms = <230>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&sk>;
         };
     };
 };
@@ -119,7 +113,7 @@ behaviors {
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
    &kp A &kp S &kp D &kp F  &kp G   &kp H &kp J &kp K &kp L &kp SEMI  
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-         &mt LSHIFT RET  &sc NUM LSHIFT &sl SYM &lt SYM RET &lt NAV SPACE &mt RCTRL RET
+         &mt LSHIFT RET  &sc NUM LSHIFT &sl SYM &lt SYM RET &lt NAV SPACE &ca RCTRL RALT
                         >;
                 };
                 nav_layer {
@@ -171,8 +165,8 @@ behaviors {
 //             |     |     |     |   |  0  |  .  |     |
                         bindings = <
    &kp F1           &kp F2          &kp F3      &kp F4  &kp F5 &kp F6    &kp F7   &kp F8      &kp F9    &kp F10
-   &kp F11          &kp F12         &trans      &trans  &trans &kp K_APP &kp LGUI &kp LALT    &kp LCTRL &kp LSHFT 
-   &bl_work_monitor &bl_pc_monitor  &bl_work    &bl_PC  &bl_PI &trans    &trans   &bootloader &reset    &bt BT_CLR 
+   &kp F11          &kp F12         &trans &trans  &trans &kp K_APP &kp LGUI &kp LALT    &kp LCTRL &kp LSHFT 
+   &bl_work_monitor &bl_pc_monitor  &bl_work    &bl_PC  &bl_PI &ext_power EP_TOG    &trans   &bootloader &trans    &bt BT_CLR 
                                     &trans       &trans  &trans &trans    &trans  &trans
                         >;
                 };
