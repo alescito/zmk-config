@@ -123,10 +123,10 @@ behaviors {
 // | BT2 |     |     |      |     |   |  \  | ENT  |      |     |      |
 //             |     |      |     |   |     |      |      |
                         bindings = <
-   &kp GRAVE    &trans      &trans   &kp ESC &trans    &trans  &kp BSPC &kp DEL   &kp HOME   &kp END
-   &kp LSHFT    &kp LCTRL   &kp LALT &kp LGUI  &kp K_APP  &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp BSPC
-   &bt BT_SEL 1 &kp C_VOLUME_UP &kp C_VOLUME_DOWN &kp TAB   &kp CAPSLOCK     &kp BSLH &trans  &trans   &trans    &trans
-                            &trans    &lt FUN RET   &trans      &trans   &trans   &trans
+   &kp GRAVE    &trans          &trans            &kp ESC       &trans        &trans    &kp BSPC  &kp DEL &kp HOME  &kp END
+   &kp LSHFT    &kp LCTRL       &kp LALT          &kp LGUI      &kp K_APP     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &kp BSPC
+   &bt BT_SEL 1 &kp C_VOLUME_UP &kp C_VOLUME_DOWN &kp TAB       &kp CAPSLOCK  &kp BSLH  &trans    &trans  &trans    &trans
+                                &trans            &lt FUN RET   &trans        &trans    &trans    &trans
                         >;
                 };
                 sym_layer {
@@ -151,10 +151,10 @@ behaviors {
 // |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |   |  0  |  .  |     |
                         bindings = <
-   &kp N1           &kp N2           &kp N3       &kp N4        &kp N5    &kp N6    &kp N7   &kp N8    &kp N9    &kp N0
-   &kp LSHFT        &kp LCTRL        &kp LALT     &kp LGUI      &kp K_APP &kp K_APP &kp RGUI &kp RALT  &kp RCTRL &kp RSHFT
-   &bt BT_NXT       &bt BT_SEL 0     &bt BT_SEL 1 &bt BT_SEL 2  &trans    &trans    &trans   &kp COMMA &kp DOT   &kp FSLH
-                    &trans            &trans       &trans        &kp N0    &kp SPACE   &trans
+   &kp N1           &kp N2           &kp N3            &kp N4        &kp N5        &kp N6    &kp N7   &kp N8    &kp N9    &kp N0
+   &kp LSHFT        &kp LCTRL        &kp LALT          &kp LGUI      &kp K_APP     &kp K_APP &kp RGUI &kp RALT  &kp RCTRL &kp RSHFT
+   &bt BT_NXT       &kp C_VOLUME_UP  &kp C_VOLUME_DOWN &kp TAB       &kp CAPSLOCK  &trans    &kp TAB   &kp COMMA &kp DOT   &kp FSLH
+                    &trans           &trans            &trans        &kp N0        &kp SPACE &trans
                         >;
                 };
                         Test_layer {
