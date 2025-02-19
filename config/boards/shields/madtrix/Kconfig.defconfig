@@ -9,7 +9,11 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 config ZMK_USB
 	default y
 
-endif
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
+
+endif 
 
 if SHIELD_MADTRIX_LEFT || SHIELD_MADTRIX_RIGHT || SHIELD_MADTRIX_DONGLE
 
@@ -18,6 +22,7 @@ config ZMK_SPLIT
 
 config ZMK_BLE
 	default y
+
 
 endif
 
