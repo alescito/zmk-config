@@ -19,6 +19,4 @@ config ZMK_SPLIT
 config ZMK_BLE
 	default y
 
-config ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE
-	default y
 endif
