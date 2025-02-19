@@ -12,3 +12,4 @@ features:
 siblings:
   - madtrix_left
   - madtrix_right
+  - madtrix_dongle
