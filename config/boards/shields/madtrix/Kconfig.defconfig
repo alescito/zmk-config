@@ -22,3 +22,17 @@ config ZMK_BLE
 config ZMK_WIDGET_BATTERY_STATUS_SHOW_PERCENTAGE
 	default y
 endif
+
+
+if ZMK_DISPLAY
+
+config I2C
+	default y
+
+config SSD1306
+	default y
+
+config SSD1306_REVERSE_MODE
+	default y
+
+endif # ZMK_DISPLAY
