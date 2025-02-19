@@ -1,16 +1,22 @@
-if SHIELD_MADTRIX_RIGHT
+if SHIELD_MADTRIX_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "Madtrix"
 
-config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
+
+config ZMK_USB
+	default y
 
 endif
 
-if SHIELD_MADTRIX_LEFT || SHIELD_MADTRIX_RIGHT
+if SHIELD_MADTRIX_LEFT || SHIELD_MADTRIX_RIGHT || SHIELD_MADTRIX_DONGLE
 
 config ZMK_SPLIT
     default y
+
+config ZMK_BLE
+	default y
 
 endif
