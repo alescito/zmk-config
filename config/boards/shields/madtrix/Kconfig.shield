@@ -3,3 +3,6 @@ config SHIELD_MADTRIX_LEFT
 
 config SHIELD_MADTRIX_RIGHT
     def_bool $(shields_list_contains,madtrix_right)
+
+config SHIELD_MADTRIX_DONGLE
+	def_bool $(shields_list_contains,madtrix_dongle)
