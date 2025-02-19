@@ -3,9 +3,7 @@ id: madtrix
 name: Madtrix
 type: shield
 url: https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard
-requires: 
-  - pro_micro
-  - i2c_oled
+requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
