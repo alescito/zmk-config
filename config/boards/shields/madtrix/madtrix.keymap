@@ -127,7 +127,7 @@ behaviors {
                         bindings = <
    &kp GRAVE    &trans          &trans            &kp ESC       &trans        &trans    &kp BSPC  &kp DEL &kp HOME  &kp END
    &kp LSHFT    &kp LCTRL       &kp LALT          &kp LGUI      &kp K_APP     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &kp BSPC
-   &bt BT_SEL 1 &kp C_VOLUME_UP &kp C_VOLUME_DOWN &kp TAB       &kp CAPSLOCK  &kp BSLH  &trans    &trans  &trans    &trans
+   &bt BT_SEL 1 &kp C_VOLUME_UP &kp C_VOLUME_DOWN &kp TAB       &kp CAPSLOCK  &kp BSLH  &kp TAB   &trans  &trans    &trans
                                 &trans            &lt FUN RET   &trans        &trans    &trans    &trans
                         >;
                 };
