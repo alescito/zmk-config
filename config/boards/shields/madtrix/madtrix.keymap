@@ -94,8 +94,9 @@ behaviors {
 #define NUM 3
 #define FUN 4
 &lt {
-    flavor = "balanced";
-    tapping-term-ms = <165>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <125>;
     quick-tap-ms = <0>;
     //global-quick-tap;
     retro-tap;
