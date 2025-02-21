@@ -96,7 +96,7 @@ behaviors {
 &lt {
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
-    require-prior-idle-ms = <165>;
+    require-prior-idle-ms = <75>;
     quick-tap-ms = <0>;
     //global-quick-tap;
     retro-tap;
