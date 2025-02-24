@@ -94,9 +94,10 @@ behaviors {
 #define NUM 3
 #define FUN 4
 &lt {
-    flavor = "balanced";
-    tapping-term-ms = <165>;
-    quick-tap-ms = <125>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <75>;
+    quick-tap-ms = <0>;
     //global-quick-tap;
     retro-tap;
 };
@@ -126,7 +127,7 @@ behaviors {
                         bindings = <
    &kp GRAVE    &trans          &trans            &kp ESC       &trans        &trans    &kp BSPC  &kp DEL &kp HOME  &kp END
    &kp LSHFT    &kp LCTRL       &kp LALT          &kp LGUI      &kp K_APP     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &kp BSPC
-   &bt BT_SEL 1 &kp C_VOLUME_UP &kp C_VOLUME_DOWN &kp TAB       &kp CAPSLOCK  &kp BSLH  &trans    &trans  &trans    &trans
+   &bt BT_SEL 1 &kp C_VOLUME_UP &kp C_VOLUME_DOWN &kp TAB       &kp CAPSLOCK  &kp BSLH  &kp TAB   &trans  &trans    &trans
                                 &trans            &lt FUN RET   &trans        &trans    &trans    &trans
                         >;
                 };
