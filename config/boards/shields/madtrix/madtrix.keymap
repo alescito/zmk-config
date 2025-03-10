@@ -15,7 +15,6 @@
     quick-tap-ms = <1>;
     global-quick-tap;
     retro-tap;
-    require-prior-idle-ms = <125>;
 };
 
 #define NAV 1
