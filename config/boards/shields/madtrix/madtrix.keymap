@@ -82,7 +82,7 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "Nav_Space";
             #binding-cells = <2>;
-            tapping_term_ms = <230>;
+            tapping_term_ms = <330>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
