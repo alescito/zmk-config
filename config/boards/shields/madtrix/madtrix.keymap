@@ -13,7 +13,7 @@
     tapping-term-ms = <210>;
     quick-tap-ms = <1>;
     global-quick-tap;
-    retro-tap;
+    #retro-tap;
     require-prior-idle-ms = <125>;
 };
 
