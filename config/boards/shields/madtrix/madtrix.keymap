@@ -95,7 +95,7 @@ behaviors {
 #define FUN 4
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <165>;
+    tapping-term-ms = <210>;
     quick-tap-ms = <1>;
     //global-quick-tap;
     retro-tap;
