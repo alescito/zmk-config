@@ -1,6 +1,0 @@
-
-description: Behavior to control GPIOs (LEDs)
-
-compatible: "alescito,behavior-kvm"
-
-include: two_param.yaml
