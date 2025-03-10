@@ -12,7 +12,7 @@
     flavor = "tap-preferred";
     tapping-term-ms = <2210>;
     #quick-tap-ms = <1>;
-    global-quick-tap;
+    #global-quick-tap;
     #retro-tap;
     #require-prior-idle-ms = <125>;
 };
