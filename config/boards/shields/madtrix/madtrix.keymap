@@ -82,15 +82,11 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "Nav_Space";
             #binding-cells = <2>;
-            #flavor = "tap-unless-interrupted";
-            #tapping-term-ms = <165>;
-            #quick-tap-ms = <155>;
-            #require-prior-idle-ms = <150>;            
-            #hold-trigger-on-release;
-            #retro-tap;
-            tapping-term-ms = <165>;
-            quick-tap-ms = <0>;
             flavor = "tap-preferred";
+            tapping-term-ms = <165>;
+            #quick-tap-ms = <155>;
+            require-prior-idle-ms = <150>;            
+            retro-tap;
             bindings = <&mo>, <&kp>;
 
         };
