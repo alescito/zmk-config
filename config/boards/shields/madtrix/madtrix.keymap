@@ -78,6 +78,14 @@ behaviors {
             flavor = "tap-preferred";
             bindings = <&mo>, <&sk>;
         };
+        nv: nav_space {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Nav_Space";
+            #binding-cells = <2>;
+            tapping_term_ms = <230>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+        };
         ca: control_alt {
             compatible = "zmk,behavior-hold-tap";
             label = "Control_Alt";
@@ -94,7 +102,7 @@ behaviors {
 #define NUM 3
 #define FUN 4
 &lt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     tapping-term-ms = <210>;
     quick-tap-ms = <1>;
     //global-quick-tap;
@@ -113,7 +121,7 @@ behaviors {
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
    &kp A &kp S &kp D &kp F  &kp G   &kp H &kp J &kp K &kp L &kp SEMI  
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-         &mt LSHIFT RET  &sc NUM LSHIFT &sl SYM &lt SYM RET &lt NAV SPACE &ca RCTRL RALT
+         &mt LSHIFT RET  &sc NUM LSHIFT &sl SYM &lt SYM RET &nv NAV SPACE &ca RCTRL RALT
                         >;
                 };
                 nav_layer {
