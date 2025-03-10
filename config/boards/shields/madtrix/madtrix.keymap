@@ -15,7 +15,7 @@ behaviors {
             label = "Nav_Space";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <1250>;
+            tapping-term-ms = <5250>;
             #quick-tap-ms = <155>;
             #require-prior-idle-ms = <150>;            
             #retro-tap;
