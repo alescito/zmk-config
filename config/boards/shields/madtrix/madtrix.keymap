@@ -83,8 +83,8 @@ behaviors {
             label = "Nav_Space";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <480>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <165>;
+            quick-tap-ms = <155>;
             require-prior-idle-ms = <150>;
             bindings = <&mo>, <&kp>;
             hold-trigger-on-release;
