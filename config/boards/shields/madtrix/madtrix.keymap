@@ -87,6 +87,7 @@ behaviors {
             quick-tap-ms = <1>;
             require-prior-idle-ms = <164>;
             bindings = <&mo>, <&kp>;
+            retro-tap;
         };
         ca: control_alt {
             compatible = "zmk,behavior-hold-tap";
