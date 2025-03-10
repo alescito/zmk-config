@@ -83,9 +83,9 @@ behaviors {
             label = "Nav_Space";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <165>;
             quick-tap-ms = <1>;
-            require-prior-idle-ms = <199>;
+            require-prior-idle-ms = <164>;
             bindings = <&mo>, <&kp>;
         };
         ca: control_alt {
