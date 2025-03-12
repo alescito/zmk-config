@@ -86,7 +86,7 @@ behaviors {
             tapping-term-ms = <165>;
             #quick-tap-ms = <155>;
             require-prior-idle-ms = <125>;            
-            #retro-tap;
+            retro-tap;
             bindings = <&mo>, <&kp>;
 
         };
