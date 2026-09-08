@@ -68,6 +68,11 @@
     quick-release;
     /delete-property/ ignore-modifiers;
 };
+&sl {
+    release-after-ms = <500>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
 /{
 behaviors {
         sc: shif_control {
