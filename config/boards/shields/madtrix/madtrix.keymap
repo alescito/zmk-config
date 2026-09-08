@@ -83,7 +83,7 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "Nav_Space";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <165>;
             #quick-tap-ms = <155>;
             require-prior-idle-ms = <125>;            
