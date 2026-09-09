@@ -87,7 +87,7 @@ behaviors {
             flavor = "balanced";
             tapping-term-ms = <165>;
             require-prior-idle-ms = <125>;            
-            hold-trigger-key-positions = <3 6 7 10 11 12 13 14 15 16 17 18 23>;
+            hold-trigger-key-positions = <3 6 7 10 11 12 13 14 15 16 17 18 23 31>;
             retro-tap;
             bindings = <&mo>, <&kp>;
 
