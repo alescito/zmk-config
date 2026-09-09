@@ -86,6 +86,7 @@ behaviors {
             flavor = "balanced";
             tapping-term-ms = <165>;
             require-prior-idle-ms = <125>;            
+            hold-trigger-key-positions = <6 15>;
             retro-tap;
             bindings = <&mo>, <&kp>;
 
@@ -96,12 +97,10 @@ behaviors {
             #binding-cells = <2>;
             tapping_term_ms = <230>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <6 15>;
             bindings = <&kp>, <&sk>;
         };
     };
 };
-
 #define NAV 1
 #define SYM 2
 #define NUM 3
