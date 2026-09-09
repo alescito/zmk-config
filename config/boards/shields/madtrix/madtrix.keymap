@@ -106,10 +106,10 @@ behaviors {
 #define NUM 3
 #define FUN 4
 &lt {
-    flavor = "hold-preferred";
-    tapping-term-ms = <210>;
-    quick-tap-ms = <1>;
-    //global-quick-tap;
+    flavor = "balanced";
+    tapping-term-ms = <165>;
+    require-prior-idle-ms = <125>;            
+    hold-trigger-key-positions = <3 6 7 10 11 12 13 14 15 16 17 18 23>;
     retro-tap;
 };
 /{
