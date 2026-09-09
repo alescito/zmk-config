@@ -139,7 +139,7 @@ behaviors {
 // | BT2 |     |     |      |     |   |  \  | ENT  |      |     |      |
 //             |     |      |     |   |     |      |      |
                         bindings = <
-   &kp EXCL     &kp AT          &kp HASH          &kp DLLR      &kp PRCNT     &ESC      &kp BSPC  &kp DEL &kp HOME  &kp END
+   &kp EXCL     &kp AT          &kp HASH          &kp DLLR      &kp PRCNT     &kp ESC      &kp BSPC  &kp DEL &kp HOME  &kp END
    &kp LSHFT    &kp LCTRL       &kp LALT          &kp LGUI      &kp K_APP     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT &kp BSPC
    &bt BT_SEL 1 &kp C_VOLUME_UP &kp C_VOLUME_DOWN &kp TAB       &kp CAPSLOCK  &kp BSLH  &kp TAB   &trans  &kp PAGE_UP    &kp PAGE_DOWN
                                 &trans            &lt FUN RET   &trans        &trans    &trans    &trans
