@@ -96,7 +96,7 @@ behaviors {
             #binding-cells = <2>;
             tapping_term_ms = <230>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <6>;
+            hold-trigger-key-positions = <6 15>;
             bindings = <&kp>, <&sk>;
         };
     };
