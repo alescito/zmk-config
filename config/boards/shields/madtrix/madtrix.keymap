@@ -75,10 +75,8 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "Shif_Control";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <165>;
-            require-prior-idle-ms = <125>;
-            hold-trigger-key-positions = <32>;
+            tapping_term_ms = <230>;
+            flavor = "tap-preferred";
             bindings = <&mo>, <&sk>;
         };
         nv: nav_space {
