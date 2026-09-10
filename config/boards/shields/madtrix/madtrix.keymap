@@ -102,7 +102,7 @@ behaviors {
             require-prior-idle-ms = <50>;            
             //hold-trigger-key-positions = <10 11 12 13 14>;
             retro-tap;
-            bindings = <&mo>, <&kp>;
+            bindings = <&mt>, <&kp>;
 
         };
         hrsr: home_row_shift_right {
@@ -114,7 +114,7 @@ behaviors {
             require-prior-idle-ms = <50>;            
             //hold-trigger-key-positions = <15 16 17 18 19>;
             retro-tap;
-            bindings = <&mo>, <&kp>;
+            bindings = <&mt>, <&kp>;
 
         };
         ca: control_alt {
