@@ -71,7 +71,7 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_ñ {
+        combo_n_espana {
             timeout-ms = <50>;
             key-positions = <18 19>;
             bindings = <&kp RA(N)>;
