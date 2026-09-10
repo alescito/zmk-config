@@ -71,9 +71,9 @@
 
 /{
 behaviors {
-        sc: shif_control {
+        ss: sym_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "Shif_Control";
+            label = "Sym_Shift";
             #binding-cells = <2>;
             flavor = "balanced";            
             tapping-term-ms = <165>;
@@ -130,7 +130,7 @@ behaviors {
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
    &kp A &kp S &kp D &kp F  &kp G   &kp H &kp J &kp K &kp L &kp SEMI  
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-         &ca LSHIFT RALT  &sc SYM LSHIFT &kp LSHIFT &lt NUM RET &nv NAV SPACE &ca RCTRL RALT
+         &ca LSHIFT RALT  &ss SYM LSHIFT &kp LSHIFT &lt NUM RET &nv NAV SPACE &ca RCTRL RALT
                         >;
                 };
                 nav_layer {
