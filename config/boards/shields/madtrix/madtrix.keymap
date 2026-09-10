@@ -69,7 +69,7 @@
     /delete-property/ ignore-modifiers;
 };
 &kscan0 {
-    debounce-press-ms = <0>;
+    debounce-press-ms = <2>;
     debounce-release-ms = <3>;
 };
 
@@ -132,7 +132,7 @@ behaviors {
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
    &kp A &kp S &kp D &kp F  &kp G   &kp H &kp J &kp K &kp L &kp SEMI  
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-         &ca LSHIFT RALT  &ss SYM LSHIFT &kp LSHIFT &lt NUM RET &nv NAV SPACE &ca RCTRL RALT
+         &ca LSHIFT RALT  &ss SYM LSHIFT &lt NUM RET &lt FUN RET  &nv NAV SPACE &ca RCTRL RALT
                         >;
                 };
                 nav_layer {
