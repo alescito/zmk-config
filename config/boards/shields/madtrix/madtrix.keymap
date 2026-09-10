@@ -97,7 +97,7 @@ behaviors {
             compatible = "zmk,behavior-hold-tap";
             label = "Control_Alt";
             #binding-cells = <2>;
-            tapping_term_ms = <230>;
+            tapping-term-ms = <230>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&sk>;
         };
