@@ -68,6 +68,10 @@
     quick-release;
     /delete-property/ ignore-modifiers;
 };
+&kscan0 {
+    debounce-press-ms = <0>;
+    debounce-release-ms = <3>;
+};
 
 /{
 behaviors {
