@@ -93,30 +93,7 @@ behaviors {
             bindings = <&mo>, <&kp>;
 
         };
-        hrsl: home_row_shift_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "home_row_shift_left";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            require-prior-idle-ms = <50>;            
-            //hold-trigger-key-positions = <10 11 12 13 14>;
-            retro-tap;
-            bindings = <&kp>, <&kp>;
-
-        };
-        hrsr: home_row_shift_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "home_row_shift_right";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            require-prior-idle-ms = <50>;            
-            //hold-trigger-key-positions = <15 16 17 18 19>;
-            retro-tap;
-            bindings = <&kp>, <&kp>;
-
-        };
+       
         ca: control_alt {
             compatible = "zmk,behavior-hold-tap";
             label = "Control_Alt";
@@ -152,7 +129,7 @@ behaviors {
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I &kp O &kp P
-   &hrsl LSHIFT A &kp S &kp D &kp F  &kp G   &kp H &kp J &kp K &kp L &hrsr RSHIFT SEMI  
+   &kp A &kp S &kp D &kp F  &kp G   &kp H &kp J &kp K &kp L &kp SEMI  
    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
          &ca LSHIFT RALT  &ss SYM LSHIFT &kp LSHIFT &lt NUM RET &nv NAV SPACE &ca RCTRL RALT
                         >;
