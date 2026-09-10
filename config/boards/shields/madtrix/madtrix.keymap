@@ -77,7 +77,7 @@ behaviors {
             #binding-cells = <2>;
             flavor = "balanced";            
             tapping-term-ms = <165>;
-            require-prior-idle-ms = <75>;
+            require-prior-idle-ms = <50>;
             retro-tap;
             bindings = <&mo>, <&sk>;
         };
